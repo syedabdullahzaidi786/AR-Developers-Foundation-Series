@@ -4,6 +4,8 @@ sidebar_position: 3
 
 # WebStorm
 
+![WebStorm Interface](/img/ides/webstorm.png)
+
 **WebStorm** is an integrated development environment for JavaScript and related technologies. Like other JetBrains IDEs, it makes your development experience more enjoyable, automating routine work and helping you handle complex tasks with ease.
 
 > **Note**: WebStorm is a paid product with a 30-day free trial. It is free for students and open-source maintainers.

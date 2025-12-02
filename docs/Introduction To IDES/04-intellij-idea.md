@@ -4,6 +4,8 @@ sidebar_position: 4
 
 # IntelliJ IDEA
 
+![IntelliJ IDEA Interface](/img/ides/intellij.png)
+
 **IntelliJ IDEA** is an IDE written in Java for developing computer software. It is developed by JetBrains and is available as an Apache 2 Licensed community edition, and in a proprietary commercial edition.
 
 ## Key Features
