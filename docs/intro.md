@@ -2,46 +2,35 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Introduction
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Welcome to the **AR Developers Foundation Series**.
 
-## Getting Started
+This comprehensive documentation series is designed to guide developers through the essential building blocks of modern software development. Whether you are just starting your journey or looking to solidify your understanding of core technologies, this "book" serves as your roadmap.
 
-Get started by **creating a new site**.
+## About This Series
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+The **AR Developers Foundation Series** aims to provide clear, step-by-step tutorials and in-depth explanations of key technologies used in the industry today. We believe in learning by doing, so you will find practical examples and hands-on exercises throughout the chapters.
 
-### What you'll need
+## What You Will Learn
 
-- [Node.js](https://nodejs.org/en/download/) version 20.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+This series covers a wide range of topics, starting with the fundamentals and progressing to more advanced concepts.
 
-## Generate a new site
+### Current Modules
 
-Generate a new Docusaurus site using the **classic template**.
+- **TypeScript**: Dive into the world of typed JavaScript. Learn how to set up your environment, understand basic types, and leverage the power of static analysis to write safer, more maintainable code.
 
-The classic template will automatically be added to your project after you run the command:
+### Upcoming Modules
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+Stay tuned for future updates as we expand the series to cover:
+- **React & Next.js**: Building modern user interfaces.
+- **Backend Development**: Creating robust APIs and services.
+- **DevOps**: Understanding deployment and CI/CD pipelines.
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+## How to Use This Documentation
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+1.  **Follow the Order**: We recommend following the tutorials in the order they are presented, as concepts often build upon previous ones.
+2.  **Practice**: Don't just read—code along! The best way to learn is to get your hands dirty.
+3.  **Explore**: Use the sidebar to navigate between different topics and modules.
 
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Let's get started with your first module: **TypeScript Setup**!
