@@ -1,11 +1,397 @@
-.features {
-  display: flex;
-  align-items: center;
-  padding: 2rem 0;
-  width: 100%;
+/* Common Section Styles */
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--ifm-heading-color);
 }
 
-.featureSvg {
-  height: 200px;
-  width: 200px;
+.sectionSubtitle {
+  font-size: 1.25rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--ifm-color-emphasis-700);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Card Common Styles */
+.cardEmoji {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--ifm-heading-color);
+}
+
+.cardDescription {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--ifm-color-emphasis-800);
+}
+
+/* AI Development Spectrum Section */
+.spectrumSection {
+  padding: 5rem 2rem;
+  background: var(--ifm-background-color);
+}
+
+.spectrumGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.spectrumCard {
+  background: var(--ifm-card-background-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.spectrumCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-color: var(--ifm-color-primary);
+}
+
+.featureList {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+  text-align: left;
+}
+
+.featureList li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.featureList li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--ifm-color-primary);
+  font-weight: bold;
+}
+
+/* What Makes This Different Section */
+.differenceSection {
+  padding: 5rem 2rem;
+  background: var(--ifm-color-emphasis-100);
+}
+
+[data-theme='dark'] .differenceSection {
+  background: var(--ifm-background-surface-color);
+}
+
+.differenceGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.differenceCard {
+  background: var(--ifm-card-background-color);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid transparent;
+}
+
+.differenceCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-color: var(--ifm-color-primary);
+}
+
+/* Organizational AI Maturity Levels Section */
+.maturitySection {
+  padding: 5rem 2rem;
+  background: var(--ifm-background-color);
+}
+
+.maturityGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.maturityCard {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+[data-theme='dark'] .maturityCard {
+  background: linear-gradient(135deg, #1e3a8a 0%, #7c3aed 100%);
+}
+
+.maturityCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.maturityLevel {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+.maturityCard .cardTitle {
+  color: white;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.maturityCard .cardDescription {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.95rem;
+}
+
+.maturityNote {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+}
+
+/* Comparison Section */
+.comparisonSection {
+  padding: 5rem 2rem;
+  background: var(--ifm-color-emphasis-100);
+}
+
+[data-theme='dark'] .comparisonSection {
+  background: var(--ifm-background-surface-color);
+}
+
+.comparisonGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.comparisonColumn {
+  background: var(--ifm-card-background-color);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.comparisonHeader {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--ifm-color-primary);
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--ifm-color-primary);
+}
+
+.comparisonItem {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background: var(--ifm-color-emphasis-100);
+}
+
+[data-theme='dark'] .comparisonItem {
+  background: var(--ifm-color-emphasis-200);
+}
+
+.comparisonItem strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--ifm-heading-color);
+}
+
+.comparisonItem p {
+  margin: 0;
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.5;
+}
+
+/* CTA Section */
+.ctaSection {
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-align: center;
+}
+
+[data-theme='dark'] .ctaSection {
+  background: linear-gradient(135deg, #1e3a8a 0%, #7c3aed 100%);
+}
+
+.ctaTitle {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: white !important;
+}
+
+.ctaSubtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+  opacity: 0.95;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ctaButton {
+  background: white !important;
+  color: #667eea !important;
+  border: none !important;
+  font-weight: 600;
+  padding: 1rem 2.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  color: #667eea !important;
+  text-decoration: none;
+}
+
+.ctaButtonOutline {
+  background: transparent !important;
+  color: white !important;
+  border: 2px solid white !important;
+  font-weight: 600;
+  padding: 1rem 2.5rem;
+  transition: all 0.3s ease;
+}
+
+.ctaButtonOutline:hover {
+  background: white !important;
+  color: #667eea !important;
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 996px) {
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .sectionSubtitle {
+    font-size: 1.1rem;
+  }
+
+  .spectrumSection,
+  .differenceSection,
+  .maturitySection,
+  .comparisonSection {
+    padding: 3rem 1.5rem;
+  }
+
+  .ctaSection {
+    padding: 4rem 1.5rem;
+  }
+
+  .ctaTitle {
+    font-size: 2.25rem;
+  }
+
+  .ctaSubtitle {
+    font-size: 1.25rem;
+  }
+
+  .spectrumGrid,
+  .differenceGrid,
+  .maturityGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .comparisonGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sectionTitle {
+    font-size: 1.75rem;
+  }
+
+  .sectionSubtitle {
+    font-size: 1rem;
+  }
+
+  .cardEmoji {
+    font-size: 2.5rem;
+  }
+
+  .cardTitle {
+    font-size: 1.25rem;
+  }
+
+  .spectrumSection,
+  .differenceSection,
+  .maturitySection,
+  .comparisonSection {
+    padding: 2.5rem 1rem;
+  }
+
+  .ctaSection {
+    padding: 3rem 1rem;
+  }
+
+  .ctaTitle {
+    font-size: 1.75rem;
+  }
+
+  .ctaSubtitle {
+    font-size: 1.1rem;
+  }
+
+  .ctaButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ctaButton,
+  .ctaButtonOutline {
+    width: 100%;
+    max-width: 300px;
+  }
 }

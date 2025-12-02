@@ -1,4 +1,4 @@
-import type {ReactNode} from 'react';
+import type { ReactNode } from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
@@ -9,19 +9,26 @@ import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
+    <header className={styles.heroBanner}>
+      <div className={styles.heroContent}>
+        <Heading as="h1" className={styles.heroTitle}>
+          AR Developers Foundation Series
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
+        <p className={styles.heroSubtitle}>
+          Colearning Agentic AI with Python and TypeScript – Spec Driven Reusable Intelligence
+        </p>
+        <div className={styles.heroButtons}>
           <Link
-            className="button button--secondary button--lg"
+            className={clsx('button button--primary button--lg', styles.heroButton)}
             to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            Start Reading →
+          </Link>
+          <Link
+            className={clsx('button button--outline button--lg', styles.heroButtonSecondary)}
+            to="/blog">
+            Explore AR Developers 🎓
           </Link>
         </div>
       </div>
@@ -30,11 +37,11 @@ function HomepageHeader() {
 }
 
 export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`${siteConfig.title}`}
+      description="Colearning Agentic AI with Python and TypeScript – Spec Driven Reusable Intelligence. Build production-ready intelligent systems.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

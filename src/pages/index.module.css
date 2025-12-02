@@ -4,20 +4,117 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
+  padding: 8rem 2rem;
   text-align: center;
   position: relative;
   overflow: hidden;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+[data-theme='dark'] .heroBanner {
+  background: linear-gradient(135deg, #1e3a8a 0%, #7c3aed 100%);
+}
+
+.heroContent {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  color: white !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.heroSubtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+  opacity: 0.95;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heroButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.heroButton {
+  background: white !important;
+  color: #667eea !important;
+  border: none !important;
+  font-weight: 600;
+  padding: 0.875rem 2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.heroButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  color: #667eea !important;
+}
+
+.heroButtonSecondary {
+  background: transparent !important;
+  color: white !important;
+  border: 2px solid white !important;
+  font-weight: 600;
+  padding: 0.875rem 2rem;
+  transition: all 0.3s ease;
+}
+
+.heroButtonSecondary:hover {
+  background: white !important;
+  color: #667eea !important;
+  transform: translateY(-2px);
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
-    padding: 2rem;
+    padding: 4rem 1.5rem;
+  }
+
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.25rem;
   }
 }
 
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media screen and (max-width: 768px) {
+  .heroBanner {
+    padding: 3rem 1rem;
+  }
+
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.1rem;
+  }
+
+  .heroButtons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .heroButton,
+  .heroButtonSecondary {
+    width: 100%;
+    max-width: 300px;
+  }
 }
