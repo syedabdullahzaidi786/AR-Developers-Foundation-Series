@@ -1,25 +1,19 @@
-yangshun:
-  name: Yangshun Tay
-  title: Ex-Meta Staff Engineer, Co-founder GreatFrontEnd
-  url: https://linkedin.com/in/yangshun
-  image_url: https://github.com/yangshun.png
+ar_developers:
+  name: AR Developers Team
+  title: "Founders & Lead Instructors - AR Developers Foundation Series"
+  url: https://github.com/syedabdullahzaidi786
+  image_url: https://github.com/syedabdullahzaidi786.png
   page: true
   socials:
-    x: yangshunz
-    linkedin: yangshun
-    github: yangshun
-    newsletter: https://www.greatfrontend.com
+    github: syedabdullahzaidi786
+    linkedin: ar-developers
 
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
-  page:
-    # customize the url of the author page at /blog/authors/<permalink>
-    permalink: '/all-sebastien-lorber-articles'
+abdullah_zaidi:
+  name: Syed Abdullah Zaidi
+  title: "Founder & Chief Instructor"
+  url: https://github.com/syedabdullahzaidi786
+  image_url: https://github.com/syedabdullahzaidi786.png
+  page: true
   socials:
-    x: sebastienlorber
-    linkedin: sebastienlorber
-    github: slorber
-    newsletter: https://thisweekinreact.com
+    github: syedabdullahzaidi786
+    linkedin: syed-abdullah-zaidi

@@ -1,19 +1,30 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+ai-native:
+  label: AI Native
+  permalink: /ai-native
+  description: Articles about AI-native development and agentic systems
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+python:
+  label: Python
+  permalink: /python
+  description: Python programming tutorials and best practices
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+typescript:
+  label: TypeScript
+  permalink: /typescript
+  description: TypeScript development guides and tips
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+agentic-ai:
+  label: Agentic AI
+  permalink: /agentic-ai
+  description: Building intelligent agent systems
+
+tutorials:
+  label: Tutorials
+  permalink: /tutorials
+  description: Step-by-step learning guides
+
+web-development:
+  label: Web Development
+  permalink: /web-development
+  description: Modern web development techniques
+
